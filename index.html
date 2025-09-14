@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio.com</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li> 
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="overlay"></div>
+    <div class="home-content">
+      <h1>Hi, I'm Nikita Patil</h1>
+      <p>Aspiring Full Stack Web Developer | Computer Science Student | Tech Enthusiast</p>
+      <div class="social-links">
+        <a href="http://www.linkedin.com/in/nikita-patil-377013333" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/nikitapatil_7798" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/your-profile"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="girl.webp" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi! I’m Nikita Patil, a 2nd-year Computer Science student at Vishwakarma Instittute of Technology. I have a strong interest in Web Development, Artificial Intelligence, and IoT. Currently, I am working on projects such as a Simulation of Satellite Handoff Using Real-Time TLE Data. I enjoy solving real-world problems through technology, building innovative projects, and continuously learning new skills. My goal is to grow as a Software Engineer with expertise in AI/ML and Full-Stack Development, while also exploring opportunities in hackathons and research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">💻 <strong>Languages:</strong> C, C++, Python, Java, SQL</div>
+        <div class="skill-card">🌐 <strong>Web:</strong> HTML, CSS, JavaScript, React, Node.js</div>
+        <div class="skill-card">🗄️ <strong>Databases:</strong> MySQL, MongoDB</div>
+        <div class="skill-card">⚡ <strong>Other:</strong> Git, Arduino/IoT</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="project1.png" alt="Project 1">
+          <h3>Indian Culture Website</h3>
+          <p>Showcasing India's heritage, festivals, and traditions.</p>
+          <a href="http://127.0.0.1:5500/CourseprojectWD/final.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="project2.png" alt="Project 2">
+          <h3>Weather App</h3>
+          <p>Real-time weather conditions using API.</p>
+          <a href="http://127.0.0.1:5500/WeatherApp/index.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="project3.png" alt="Project 3">
+          <h3>To-Do List App</h3>
+          <p>Simple to-do app built with HTML, CSS, JavaScript.</p>
+          <a href="http://127.0.0.1:5500/ToDoList/index.html" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <p>Click below to download my resume:</p>
+      <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </section>
+
+<section id="contact" class="contact">
+  <h2>📬 Contact Me</h2>
+  <p>If you'd like to get in touch, feel free to connect with me:</p>
+  
+  <ul>
+    <li>📧 Email: <a href="mailto:yourname@gmail.com">yourname@gmail.com</a></li>
+    <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+    <li>👨‍💻 GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+  </ul>
+  
+  <!-- Optional Contact Form -->
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
