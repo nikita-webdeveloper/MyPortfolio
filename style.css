@@ -157,7 +157,7 @@ body {
   justify-content: center;
 }
 
-.about-col-1 {
+/* .about-col-1 {
   flex: 1;
   min-width: 250px;
   text-align: center;
@@ -169,7 +169,28 @@ body {
   max-width: 300px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+} */
+.about-col-1 {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 20px;
 }
+
+.about-col-1 img {
+  width: 250px;       /* fixed width */
+  height: 250px;      /* fixed height to make square */
+  object-fit: cover;  /* ensures image covers the square without distortion */
+  border-radius: 50%; /* makes it circular */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-col-1 img:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
 
 .about-col-2 {
   flex: 2;
